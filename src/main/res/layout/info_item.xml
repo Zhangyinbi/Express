@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/iv_gray"
+            android:background="@android:color/transparent"
+            android:src="@drawable/lacation" />
+
+        <ImageView
+            android:id="@+id/iv_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/now" />
+
+
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#999999"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:textColor="#bbbbbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="13sp"
+            />
+
+        <View
+            android:id="@+id/vvv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:background="#dddddd" />
+        <TextView
+            android:id="@+id/view_duan"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="31dp"
+            android:layout_alignBottom="@id/vvv"
+            android:background="#ddd"/>
+        <TextView
+            android:id="@+id/view_chang"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:layout_alignBottom="@id/vvv"
+            android:background="#ddd" />
+    </RelativeLayout>
+
+</LinearLayout>

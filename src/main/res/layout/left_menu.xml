@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/left_menu"
+    android:background="#fff">
+    <TextView
+        android:text="张隐蔽"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#f00"/>
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_below="@id/tv"
+        android:gravity="center"
+        android:layout_above="@id/v"
+        android:background="#2000"
+        android:textColor="#f0f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="欢迎使用快递查询"/>
+</RelativeLayout>

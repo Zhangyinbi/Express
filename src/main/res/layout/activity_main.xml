@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.espressage.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f73938"
+           >
+            <ImageView
+
+                android:scaleType="fitXY"
+                android:id="@+id/btn_setting"
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/home" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_zan"
+                android:layout_marginRight="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/top_right" />
+
+            <ImageView
+                android:id="@+id/iv_sum"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="fitXY"
+               android:layout_margin="5dp"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/dianzan" />
+        </RelativeLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#3fff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_search"
+                style="@style/BottomTabStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/btn_tab_home_selector"
+                android:padding="5dp"
+                android:text="@string/Search" />
+
+            <RadioButton
+                android:id="@+id/rb_history"
+                style="@style/BottomTabStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/btn_history_selector"
+                android:text="@string/history" />
+
+            <RadioButton
+                android:id="@+id/rb_tell"
+                style="@style/BottomTabStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/btn_call_selector"
+                android:text="@string/callPhone" />
+        </RadioGroup>
+
+        <com.example.espressage.view.NoScrollViewPager
+            android:id="@+id/vp_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rGroup"
+            android:layout_below="@id/rl"></com.example.espressage.view.NoScrollViewPager>
+    </RelativeLayout>
+</FrameLayout>
